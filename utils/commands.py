@@ -1,7 +1,7 @@
 import subprocess
 
 
-def execute_command(command):
+def execute_linux_command(command):
     
     try:
         result = subprocess.run(
