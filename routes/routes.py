@@ -5,15 +5,11 @@ router = APIRouter(prefix="/system")
 
 @router.get("/uptime")
 def uptime():
-    command = ["uptime"]
-    result = execute_command(command)
-    return result
+    return execute_command(["uptime"])
 
 @router.get("/whoami")
 def whoami():
-    command = ["whoami"]
-    result = execute_command(command)
-    return result
+    return execute_command(["whoami"])
 
 @router.get("/disk")
 def disk():
